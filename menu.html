@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/06cfe52e8f.js" crossorigin="anonymous"></script>
+    <title>Shilla Bakery</title>
+</head>
+<body>
+    <main>
+        <section class="image">
+            <img src="/images/sugar-powder.jpg" alt="">
+        </section>
+        <section class="menu-content">
+            <div class="icon"><img src="./images/chevron-left-solid.svg" alt=""></div>
+            <h1>Menu & Location</h1>
+            <div class="text menu">
+                <p>Select your location to see menu and store information</p>
+                <div class="locations">
+                    <a class="button" href="./annandale.html" rel="noopener noreferrer">Annandale, VA</a>
+                    <a class="button" href="./centreville.html" rel="noopener noreferrer">Centreville, VA</a>
+                    <a class="button" href="./annandale.html" rel="noopener noreferrer">Chantilly, VA</a>
+                    <a class="button" href="./annandale.html" rel="noopener noreferrer">Tysons corner, VA</a>
+                    <a class="button" href="./annandale.html" rel="noopener noreferrer">Rockville, MD</a>
+                    <a class="button" href="./annandale.html" rel="noopener noreferrer">Ellicott city, MD</a>
+
+                </div>
+                
+            </div>
+            
+            
+        </section>
+
+    </main>
+    
+    <script>
+        const arrow = document.querySelector('.icon');
+        arrow.addEventListener('click', () => {
+            window.history.go(-1);
+        })
+    </script>
+</body>
+</html>
