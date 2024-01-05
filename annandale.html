@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shilla Bakery</title>
+</head>
+<body>
+    <main>
+        <section class="image">
+            <div class="filter-color"></div>
+            <img src="/images/sugar-powder.jpg" alt="">
+            
+        </section>
+        <section class="menu-content">
+            <div class="icon"><img src="./images/chevron-left-solid.svg" alt=""></div>
+            <h1>Menu</h1>
+            <div class="menu">
+                <div class="cake">
+                    
+                </div>
+                
+            </div>
+            
+            
+        </section>
+    </main>
+    <script>
+        const arrow = document.querySelector('.icon');
+        arrow.addEventListener('click', () => {
+            window.history.go(-1);
+        })
+    </script>
+</body>
+</html>

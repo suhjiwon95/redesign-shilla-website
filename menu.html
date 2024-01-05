@@ -10,16 +10,21 @@
 <body>
     <main>
         <section class="image">
-            <img src="/images/sugar-powder.jpg" alt="">
+                <img class="hero-img" src="/images/sugar-powder.jpg" alt="">
+                <img class="annandale-img hidden" src="/images/sugar-powder.jpg" alt="">
+                <img class="centreville-img hidden" src="./images/cocoa-powder.jpg" alt="">
+
         </section>
         <section class="menu-content">
-            <div class="icon"><img src="./images/chevron-left-solid.svg" alt=""></div>
+            <div class="icon">
+                <img src="./images/chevron-left-solid.svg" alt="">
+            </div>
             <h1>Menu & Location</h1>
             <div class="text menu">
                 <p>Select your location to see menu and store information</p>
                 <div class="locations">
-                    <a class="button" href="./annandale.html" rel="noopener noreferrer">Annandale, VA</a>
-                    <a class="button" href="./centreville.html" rel="noopener noreferrer">Centreville, VA</a>
+                    <a class="button" id="annandale" href="./annandale.html" rel="noopener noreferrer">Annandale, VA</a>
+                    <a class="button" id="centreville" href="./centreville.html" rel="noopener noreferrer">Centreville, VA</a>
                     <a class="button" href="./annandale.html" rel="noopener noreferrer">Chantilly, VA</a>
                     <a class="button" href="./annandale.html" rel="noopener noreferrer">Tysons corner, VA</a>
                     <a class="button" href="./annandale.html" rel="noopener noreferrer">Rockville, MD</a>
@@ -39,6 +44,27 @@
         arrow.addEventListener('click', () => {
             window.history.go(-1);
         })
+
+        const heroImg = document.querySelector('.hero-img');
+        const annandaleButton = document.getElementById('annandale');
+        const centrevilleButton = document.getElementById('centreville');
+        const annandaleImage = document.querySelector('.annandale-img');
+        const centrevilleImage = document.querySelector('.centreville-img');
+
+        // Add event listeners for mouse hover on buttons
+        annandaleButton.addEventListener('mouseover', function() {
+            // Show the corresponding image and hide others
+            annandaleImage.classList.remove('hidden');
+            centrevilleImage.classList.add('hidden');
+        });
+
+        centrevilleButton.addEventListener('mouseover', function() {
+            // Show the corresponding image and hide others
+            centrevilleImage.classList.remove('hidden');
+            annandaleImage.classList.add('hidden');
+        });
+
+
     </script>
 </body>
 </html>

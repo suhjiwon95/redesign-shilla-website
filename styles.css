@@ -22,6 +22,10 @@ main {
 
 }
 
+img {
+    width: 100%;
+}
+
 section {
     flex-basis: 50%;
 }
@@ -44,8 +48,17 @@ section.menu-content {
     align-items: center;
 }
 
-img {
+section.image {
+    position: relative;
+    height: 100%;
+}
+
+
+section.image img {
     width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
 }
 
 h1 {
@@ -114,6 +127,23 @@ a {
     top: -180px;
 }
 
+
+/* menu pages */
+
+.filter-color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--black);
+    top: 0;
+    mix-blend-mode: multiply;
+    opacity: 70%;
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
 
 
 
