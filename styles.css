@@ -34,7 +34,7 @@ section {
 }
 
 section.content {
-    margin-left: 2em;
+    margin-left: 2.8em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,12 +45,12 @@ section.menu-content {
     position: relative;
     width: 734px;
     height: 100vh;
-    margin-left: 2em;
+    margin-left: 1.2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding: 2em 0;
 }
 
 section.image {
@@ -132,7 +132,8 @@ a {
     height: 20px;
     align-self: flex-start;
     position: absolute;
-    top: 140px;
+    top: 4.8em;
+    left: 2.8em;
 }
 
 
@@ -181,16 +182,8 @@ ul li {
     font-size: 1.125rem;
 }
 
-.menu-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 2em;
-}
 
-.menu-header h1 {
+.menu-page-title h1 {
     margin-bottom: 0;
 }
 
@@ -200,7 +193,7 @@ ul li {
     align-items: center;
     flex-wrap: wrap;
     overflow: auto;
-    padding: 1.6em;
+    padding: 0 3em;
 }
 
 .menu-title,
@@ -230,12 +223,6 @@ ul li {
     margin-bottom: .6em;
 }
 
-.x-icon {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-}
-
 .item-title,
 .item-and-price {
     width: 100%;
@@ -259,6 +246,7 @@ ul li {
 
 .menu-title span {
     font-size: 0.8rem;
+    margin-left: .4em;
 }
 
 

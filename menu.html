@@ -31,10 +31,10 @@
             
         </section>
         <section class="menu-content">
-            <div class="menu-header">
-                <h1>Menu</h1>
-                <img class="x-icon" src="./images/chevron-left-solid.svg" alt="">
+            <div class="icon">
+                <img src="./images/chevron-left-solid.svg" alt="">
             </div>
+            <h1 class="menu-page-title">Menu</h1>
             
             <div class="menu">
                 <div class="menu-box">
@@ -152,6 +152,50 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="menu-box">
+                    <h2 class="menu-title">sandwich</h2>
+                    <div class="items">
+                        <div class="item-and-price">
+                            <p class="item">Croissant breakfast sandwich</p>
+                            <p class="price">$12.95</p>
+                        </div>
+                        <div class="item-and-price">
+                            <p class="item">Shilla omelette</p>
+                            <p class="price">$13.95</p>
+                        </div>
+                        <div class="item-and-price">
+                            <p class="item">Breakfast platter</p>
+                            <p class="price">$13.95</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-box">
+                    <h2 class="menu-title">Drinks</h2>
+                    <div class="items">
+                        <div class="item-and-price">
+                            <p class="item">Brew coffee</p>
+                            <p class="price">$3.95</p>
+                        </div>
+                        <div class="item-and-price">
+                            <p class="item">Espresso</p>
+                            <p class="price">$1.95</p>
+                        </div>
+                        <div class="item-and-price">
+                            <p class="item">Latte</p>
+                            <p class="price">$4.95</p>
+                        </div>
+                        <div class="item-and-price">
+                            <p class="item">Smoothie</p>
+                            <p class="price">$5.95</p>
+                        </div>
+                        <div class="item-and-price">
+                            <p class="item">Bubble tea</p>
+                            <p class="price">$4.95</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             
@@ -162,7 +206,7 @@
         </section>
     </main>
     <script>
-        const arrow = document.querySelector('.x-icon');
+        const arrow = document.querySelector('.icon');
         arrow.addEventListener('click', () => {
             window.history.go(-1);
         })
