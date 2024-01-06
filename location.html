@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/06cfe52e8f.js" crossorigin="anonymous"></script>
+    <title>Shilla Bakery</title>
+</head>
+<body>
+    <main>
+        <section class="image">
+                <img class="hero-img" src="/images/sugar-powder.jpg" alt="">
+                <img class="annandale-img hidden" src="/images/sugar-powder.jpg" alt="">
+                <img class="centreville-img hidden" src="./images/cocoa-powder.jpg" alt="">
+                <img class="chantilly-img hidden" src="./images/cake-stand.jpg" alt="">
+                <img class="tysons-img hidden" src="./images/woman-with-dough.jpg" alt="">
+                <img class="rockville-img hidden" src="./images/working.jpg" alt="">
+                <img class="ellicott-img hidden" src="./images/coffee-croissant.jpg" alt="">
+        </section>
+        <section class="menu-content">
+            <div class="icon">
+                <img src="./images/chevron-left-solid.svg" alt="">
+            </div>
+            <h1>Menu & Location</h1>
+            <div class="text location-wrapper">
+                <p>Select your location to see menu and store information</p>
+                <div class="locations">
+                    <a class="button" id="annandale" href="./menu.html" rel="noopener noreferrer">Annandale, VA</a>
+                    <a class="button" id="centreville" href="./menu.html" rel="noopener noreferrer">Centreville, VA</a>
+                    <a class="button" id="chantilly" href="./menu.html" rel="noopener noreferrer">Chantilly, VA</a>
+                    <a class="button" id="tysons" href="./menu.html" rel="noopener noreferrer">Tysons corner, VA</a>
+                    <a class="button" id="rockville" href="./menu.html" rel="noopener noreferrer">Rockville, MD</a>
+                    <a class="button" id="ellicott" href="./menu.html" rel="noopener noreferrer">Ellicott city, MD</a>
+
+                </div>
+                
+            </div>
+            
+            
+        </section>
+
+    </main>
+    
+    <script>
+        const arrow = document.querySelector('.icon');
+        arrow.addEventListener('click', () => {
+            window.history.go(-1);
+        })
+
+        const heroImg = document.querySelector('.hero-img');
+        const annandaleButton = document.getElementById('annandale');
+        const centrevilleButton = document.getElementById('centreville');
+        const chantillyButton = document.getElementById('chantilly');
+        const tysonsButton = document.getElementById('tysons');
+        const rockvilleButton = document.getElementById('rockville');
+        const ellicottButton = document.getElementById('ellicott');
+
+        const annandaleImage = document.querySelector('.annandale-img');
+        const centrevilleImage = document.querySelector('.centreville-img');
+        const chantillyImage = document.querySelector('.chantilly-img');
+        const tysonsImage = document.querySelector('.tysons-img');
+        const rockvilleImage = document.querySelector('.rockville-img');
+        const ellicottImage = document.querySelector('.ellicott-img');
+
+        // Add event listeners for mouse hover on buttons
+        annandaleButton.addEventListener('mouseover', function() {
+            // Show the corresponding image and hide others
+            annandaleImage.classList.remove('hidden');
+            centrevilleImage.classList.add('hidden');
+            chantillyImage.classList.add('hidden');
+            tysonsImage.classList.add('hidden');
+            rockvilleImage.classList.add('hidden');
+            ellicottImage.classList.add('hidden');
+        });
+
+        centrevilleButton.addEventListener('mouseover', function() {
+            // Show the corresponding image and hide others
+            annandaleImage.classList.add('hidden');
+            centrevilleImage.classList.remove('hidden');
+            chantillyImage.classList.add('hidden');
+            tysonsImage.classList.add('hidden');
+            rockvilleImage.classList.add('hidden');
+            ellicottImage.classList.add('hidden');
+        });
+
+        chantillyButton.addEventListener('mouseover', function() {
+            // Show the corresponding image and hide others
+            annandaleImage.classList.add('hidden');
+            centrevilleImage.classList.add('hidden');
+            chantillyImage.classList.remove('hidden');
+            tysonsImage.classList.add('hidden');
+            rockvilleImage.classList.add('hidden');
+            ellicottImage.classList.add('hidden');
+        });
+
+        tysonsButton.addEventListener('mouseover', function() {
+            // Show the corresponding image and hide others
+            annandaleImage.classList.add('hidden');
+            centrevilleImage.classList.add('hidden');
+            chantillyImage.classList.add('hidden');
+            tysonsImage.classList.remove('hidden');
+            rockvilleImage.classList.add('hidden');
+            ellicottImage.classList.add('hidden');
+        });
+
+        rockvilleButton.addEventListener('mouseover', function() {
+            // Show the corresponding image and hide others
+            annandaleImage.classList.add('hidden');
+            centrevilleImage.classList.add('hidden');
+            chantillyImage.classList.add('hidden');
+            tysonsImage.classList.add('hidden');
+            rockvilleImage.classList.remove('hidden');
+            ellicottImage.classList.add('hidden');
+        });
+
+        ellicottButton.addEventListener('mouseover', function() {
+            // Show the corresponding image and hide others
+            annandaleImage.classList.add('hidden');
+            centrevilleImage.classList.add('hidden');
+            chantillyImage.classList.add('hidden');
+            tysonsImage.classList.add('hidden');
+            rockvilleImage.classList.add('hidden');
+            ellicottImage.classList.remove('hidden');
+        });
+
+
+
+
+    </script>
+</body>
+</html>
